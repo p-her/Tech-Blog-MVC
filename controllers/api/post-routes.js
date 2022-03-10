@@ -1,11 +1,11 @@
 const router = require('express').Router();
 const { Post, User, Comment } = require('../../models');
-const sequelize = require('../../config/connection');
+
 const withAuth = require('../../utils/auth');
 
 // get a;; users
 router.get('/', (req, res) => {
-    console.log('============================');
+
     Post.findAll({
         // Query configuration
         attributes: [
@@ -116,6 +116,15 @@ router.put('/:id', withAuth, (req, res) => {
             console.log(err);
             res.status(500).json(err);
         });
+});
+router.post('/logout' , (req, res) => {
+    if (req.session.loggedIn) {
+        req.session.destroy(() => {
+            res.status(204).end();
+        });
+    } else {
+        res.status(404).end();
+    }
 });
 
 router.delete('/:id', withAuth, (req, res) => {

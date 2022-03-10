@@ -1,38 +1,121 @@
-* {
+
+*{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-} 
-
-
-body,
-html {
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  font-family: sans-serif;
-  color: rgba(8, 102, 8, 0.466);
+    font-family:Arial, Helvetica, sans-serif
 }
 
-header {
-    margin-bottom: 20px;
-    background-color: rgba(126, 12, 12, 0.144);
+body {
+    background-color: rgba(176, 241, 176, 0.76);
+}
+
+
+
+
+
+
+/* start login Styling */
+.container {
+    margin: 0 20px;
+}
+
+
+.title {
+    background: rgba(34, 2, 2, 0.966);
+    padding: 10px;
+    color: rgba(176, 241, 176, 0.76);
+}
+
+
+
+.wrapper form {
+    
+    padding: 5px 5px;
+    border: 2px solid rgba(34, 2, 2, 0.966);
+    padding-bottom: 20px;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.btn {
+    background-color: rgba(8, 8, 8, 0.548);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
+  /* end login Styling */
+
+
+
+
+  /* start main styling */
+header nav{
+    
+    margin-bottom: 20px ;
+    background-color: rgba(34, 2, 2, 0.966);
+    padding: 20px;
+    
+}
+
+header nav a{
+    color: rgba(176, 241, 176, 0.76);
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+
+.link{
+    text-decoration: none;
+}
+
+/* end main styling */
+
+
+/* start Home styling */
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+#post-btn{
+    padding: 5px 10px;
+    color: white;
+    background-color:rgba(34, 2, 2, 0.966) ;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+/* end Home styling */
+
+
+
+.textarea-field{
+    width: 100%;
+    resize: none;
+}
+
+#content-field{
     padding: 20px;
 }
 
-
-.wrapper {
-    width: 100%;
-    min-height: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+.new-post{
     display: flex;
-    flex-direction: column;
-  }
-
-nav a{
-    text-decoration: none;
-    margin-left: 20px;
-    color: rgba(13, 104, 13, 0.753);
-    font-weight: bold;
-  
-  
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
 }

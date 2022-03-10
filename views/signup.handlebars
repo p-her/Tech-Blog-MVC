@@ -1,19 +1,29 @@
-<form class="signup-form">
-  <div>
-     <p>Sign Up</p>
-    <label for="username-login">Username</label>
-    <input type="text" id="username-login" />
-  </div>
-  <div>
-    <label for="password-login">Password</label>
-    <input type="password" id="password-login" />
-  </div>
-  <div>
-    <button type="submit">login</button>
-  </div>
-  <div>
-      <a href="/login" id="signin-link">Sign in instead</a>
-  </div>
-</form>
+<div  class="container">
+    <div class="wrapper">
+        <div class="title">
+            <span>Sign up</span>
+        </div>
+        <form class="signup-form">
+            <div class="row">
+                <label for="username"><b>Username</b></label>
+                <input type="text" id="username-signup" name="username">
 
-<script src="../public/javascript/signup.js"></script>
+            </div>
+            <div class="row">
+                 <label for="password"><b>Password</b></label>
+                <input type="password" id="password-signup" name="password">
+
+            </div>
+            <div class="submit-btn">
+                <button class="btn" id="signup-btn" type="submit">Sign Up</button>
+
+            </div>
+            <div>
+                <a href="/login" class="link" id="signin-link">Sign in instead</a>
+
+            </div>
+        </form>
+    </div>
+ 
+
+<script src="/javascript/signup.js"></script>
