@@ -13,23 +13,31 @@
   <div class="wrapper-nav">
     <header>
        <nav>
-            <a class="nav-link" href="/home">Home</a>
-            <a class="nav-link" href="/dashboard">Dashboard</a>
+               <a class="nav-link" href="/home">Home</a>
+                <a class="nav-link" href="/dashboard">Dashboard</a>
+        
             {{#if loggedIn}}
-            <a class="nav-link" id="login" href="/login">Login</a>
+                <a class="nav-link" id="logout" href="/logout">Logout</a>
             {{else}}
-            <a class="nav-link" id="logout" href="/logout">Logout</a>
+                <a class="nav-link" id="login" href="/login">Login</a>
             {{/if}}
         </nav>
     </header>
     <main>
-      {{{ body }}}
+      {{{ body }}}  
+      {{!-- body comes from partials --}}
     </main>
  
   </div>
-<script src="/javascript/add-post.js"></script>
+
+{{!-- <script src="/javascript/add-post.js"></script> --}}
   
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+ {{#if loggedIn}}
+    <script src="/javascript/logout.js"></script>
+{{else}}
+    <script src="/javascript/login.js"></script>
+{{/if}}
 
 </body>
 

@@ -22,9 +22,7 @@ const addPost = document.querySelector('#post-btn').addEventListener('click', ()
                     <button class="btn" id="create-btn" type="submit">Create</button>
                 </div>
             </form>
-            <div class="new-post">
-                    <button id="post-btn"> + New Post</button>
-            </div>
+         
         </div>
 
         `

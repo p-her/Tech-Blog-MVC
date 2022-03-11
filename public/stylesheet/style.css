@@ -88,7 +88,7 @@ header nav a{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    
 }
 
 #post-btn{
@@ -97,6 +97,7 @@ header nav a{
     background-color:rgba(34, 2, 2, 0.966) ;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 10px;
 
 }
 
@@ -119,3 +120,28 @@ header nav a{
     align-items: center;
     margin-top: 5px;
 }
+
+
+/* START post styling */
+
+.post{
+    margin: 20px 30px;
+    border: 2px solid rgba(34, 2, 2, 0.966);
+}
+
+#post-title{
+    padding: 10px;
+   
+
+}
+
+.title-section{
+    display: flex;
+    background: rgba(34, 2, 2, 0.966);
+    padding: 10px;
+    color: rgba(176, 241, 176, 0.76);
+    justify-content: space-between;
+
+}
+
+/* END post styling */

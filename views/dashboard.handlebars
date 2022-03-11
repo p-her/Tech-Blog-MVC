@@ -1,28 +1,20 @@
-{{!-- 
-<div  class="container">
-    <div class="wrapper">
-        <div class="title">
-            <span>Create New Post</span>
-        </div>
-        <form class="new-post-form">
-            <div class="row">
-                <p><b>Title</b></p>
-                <textarea class="textarea-field" id="post-title" ></textarea>
 
-            </div>
-            <div class="row">
-                <p><b>Content</b></p>
-                <textarea  class="textarea-field" id="post-content" ></textarea>
 
-            </div>
-            <div class="submit-btn">
-                <button class="btn" id="create-btn" type="submit">Create</button>
-            </div>
-        </form>
-        <div class="new-post">
-                <button id="post-btn"> + New Post</button>
-        </div>
-    </div>
-</div>
 
-<script src="/javascript/add-post.js"></script> --}}
+
+
+{{#if posts.length}}
+<section>
+   
+    <ol>
+        {{#each posts as |post|}}
+        <li>
+            {{> post-info post}}
+           
+        </li>
+        {{/each}}
+    </ol>
+</section>
+{{/if}}
+
+<script src="/javascript/add-post.js"></script>

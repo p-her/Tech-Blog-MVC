@@ -16,11 +16,15 @@ async function loginFormHandler(event) {
         });
 
         if (response.ok) {
-            document.location.replace('/home/');
+            document.location.replace('/home');
         } else {
             alert(response.statusText);
         }
     }
 }
 
-document.querySelector('.login-form').addEventListener('submit', loginFormHandler);
+
+  document.querySelector('.login-form').addEventListener('submit', loginFormHandler);
+
+
+  
