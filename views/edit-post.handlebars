@@ -5,25 +5,20 @@
              <div class="title">
                 <p><b>Edit Post</b></p>
             </div>
+   
              <form class="edit-post-form">
-    <div class="row">
-        
-        <textarea class="textarea-field" id="post-title" >{{post.title}}</textarea>
-    </div>
-    <div class="row">
-        <p><b>Content</b></p>
-        <textarea  class="textarea-field" id="post-content" >{{post.post_content}}</textarea>
-    </div>
+                <div class="row">
+                    
+                    <textarea class="textarea-field" id="post-title" >{{post.title}}</textarea>
+                </div>
+                <div class="row">
+                    <p><b>Content</b></p>
+                    <textarea  class="textarea-field" id="post-content" >{{post.post_content}}</textarea>
+                </div>
 
-    <div>
-      {{format_date post.created_at}}
-      |
-      <a href="/post/{{post.id}}">{{post.comments.length}}
-        {{format_plural "comment" post.comments.lenght}}</a>
-    </div>
-    <button type="submit">Save post</button>
-    <button type="button" class="delete-post-btn">Delete post</button>
-  </form>
+                <button type="submit">Save post</button>
+                <button type="button" class="delete-post-btn">Delete post</button>
+            </form>
          
         </div>
 

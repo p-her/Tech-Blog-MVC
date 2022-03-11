@@ -145,3 +145,42 @@ header nav a{
 }
 
 /* END post styling */
+
+
+#edit-post-section a{
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+
+#post-comment{
+    margin: 20px 50px 0 50px;
+}
+
+.comments{
+    margin-top: 20px;
+
+}
+.comment{
+    border: 2px solid rgba(34, 2, 2, 0.966);
+    margin-bottom: 20px;
+    width: 80%;
+    
+}
+#comment-title{
+    color: white;
+    background-color:  rgba(34, 2, 2, 0.966);
+    padding-left: 10px;
+}
+
+.text{
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+#comment-body{
+
+    width: 80%;
+    resize: none;
+    padding: 20px;
+}

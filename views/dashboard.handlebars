@@ -8,10 +8,14 @@
    
     <ol>
         {{#each posts as |post|}}
-        <li>
+        <li id="edit-post-section">
             {{> post-info post}}
-            <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
+            <a id="edit-post-btn" href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
+         
            
+            <a id="comment-btn" href="/post/{{post.id}}">{{post.comments.length}}
+                    {{format_plural "comment" post.comments.lenght}}</a>
+          
         </li>
         {{/each}}
     </ol>
