@@ -24,7 +24,6 @@ const addPost = document.querySelector('#post-btn').addEventListener('click', ()
             </form>
          
         </div>
-
         `
     )
  $('.content').append( contentEl);
